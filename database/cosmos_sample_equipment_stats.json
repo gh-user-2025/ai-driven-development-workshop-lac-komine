@@ -160,5 +160,339 @@
     ],
     "type": "daily-statistics",
     "_ts": 1708963200
+  },
+  {
+    "id": "stats-equipment-011-20240227",
+    "deviceId": "equipment-011",
+    "equipmentName": "第3製造ライン溶接ロボット",
+    "date": "2024-02-27",
+    "period": "daily",
+    "statistics": {
+      "operatingHours": 20.2,
+      "downtime": 3.8,
+      "efficiency": 84.17,
+      "averageArcVoltage": 24.1,
+      "maxArcVoltage": 26.8,
+      "minArcVoltage": 22.5,
+      "weldCount": 1248,
+      "defectWeldCount": 12,
+      "totalWireFeed": 28.5,
+      "shieldingGasConsumption": 185.5
+    },
+    "hourlyData": [
+      {
+        "hour": 6,
+        "status": "running",
+        "weldsCompleted": 65,
+        "avgArcVoltage": 24.2,
+        "gasFlow": 15.1
+      },
+      {
+        "hour": 7,
+        "status": "running",
+        "weldsCompleted": 68,
+        "avgArcVoltage": 24.0,
+        "gasFlow": 15.3
+      },
+      {
+        "hour": 8,
+        "status": "maintenance",
+        "weldsCompleted": 0,
+        "avgArcVoltage": 0,
+        "gasFlow": 0
+      }
+    ],
+    "type": "daily-statistics",
+    "_ts": 1709020800
+  },
+  {
+    "id": "stats-equipment-013-20240227",
+    "deviceId": "equipment-013",
+    "equipmentName": "乾燥炉",
+    "date": "2024-02-27",
+    "period": "daily",
+    "statistics": {
+      "operatingHours": 23.5,
+      "downtime": 0.5,
+      "efficiency": 97.92,
+      "averageTemperature": 182.8,
+      "maxTemperature": 188.2,
+      "minTemperature": 178.5,
+      "batchesCompleted": 8,
+      "energyConsumption": 1250.8,
+      "gasConsumption": 285.5
+    },
+    "hourlyData": [
+      {
+        "hour": 0,
+        "status": "running",
+        "avgTemperature": 185.2,
+        "gasFlow": 45.8,
+        "batchProgress": 75
+      },
+      {
+        "hour": 1,
+        "status": "running",
+        "avgTemperature": 184.8,
+        "gasFlow": 46.2,
+        "batchProgress": 100
+      }
+    ],
+    "type": "daily-statistics",
+    "_ts": 1709028000
+  },
+  {
+    "id": "stats-equipment-016-20240227",
+    "deviceId": "equipment-016",
+    "equipmentName": "レーザー切断機",
+    "date": "2024-02-27",
+    "period": "daily",
+    "statistics": {
+      "operatingHours": 18.8,
+      "downtime": 5.2,
+      "efficiency": 78.33,
+      "averageLaserPower": 2820.5,
+      "maxLaserPower": 3000.0,
+      "minLaserPower": 2650.0,
+      "cuttingLength": 485.2,
+      "materialProcessed": 125.8,
+      "assistGasConsumption": 58.5
+    },
+    "hourlyData": [
+      {
+        "hour": 8,
+        "status": "running",
+        "cuttingLength": 25.8,
+        "avgLaserPower": 2850.0,
+        "cuttingSpeed": 1.8
+      },
+      {
+        "hour": 9,
+        "status": "running",
+        "cuttingLength": 28.2,
+        "avgLaserPower": 2780.0,
+        "cuttingSpeed": 1.9
+      }
+    ],
+    "type": "daily-statistics",
+    "_ts": 1709031600
+  },
+  {
+    "id": "stats-equipment-020-20240227",
+    "deviceId": "equipment-020",
+    "equipmentName": "自動倉庫システム",
+    "date": "2024-02-27",
+    "period": "daily",
+    "statistics": {
+      "operatingHours": 22.5,
+      "downtime": 1.5,
+      "efficiency": 93.75,
+      "totalMovements": 458,
+      "averageMovementTime": 2.8,
+      "maxLoadWeight": 280.5,
+      "totalWeightMoved": 15285.0,
+      "errorCount": 2
+    },
+    "hourlyData": [
+      {
+        "hour": 6,
+        "status": "running",
+        "movements": 25,
+        "avgMovementTime": 2.9,
+        "totalWeight": 850.5
+      },
+      {
+        "hour": 7,
+        "status": "running",
+        "movements": 32,
+        "avgMovementTime": 2.7,
+        "totalWeight": 1125.8
+      }
+    ],
+    "type": "daily-statistics",
+    "_ts": 1709035200
+  },
+  {
+    "id": "stats-equipment-014-20240228",
+    "deviceId": "equipment-014",
+    "equipmentName": "射出成形機1号機",
+    "date": "2024-02-28",
+    "period": "daily",
+    "statistics": {
+      "operatingHours": 19.5,
+      "downtime": 4.5,
+      "efficiency": 81.25,
+      "averageBarrelTemp": 244.8,
+      "maxBarrelTemp": 248.5,
+      "minBarrelTemp": 242.0,
+      "cyclesCompleted": 1580,
+      "defectiveProducts": 23,
+      "materialConsumption": 125.8,
+      "energyConsumption": 285.5
+    },
+    "hourlyData": [
+      {
+        "hour": 6,
+        "status": "running",
+        "cyclesCompleted": 85,
+        "avgBarrelTemp": 245.2,
+        "avgCycleTime": 42.5
+      },
+      {
+        "hour": 7,
+        "status": "running",
+        "cyclesCompleted": 88,
+        "avgBarrelTemp": 244.8,
+        "avgCycleTime": 41.8
+      }
+    ],
+    "type": "daily-statistics",
+    "_ts": 1709114400
+  },
+  {
+    "id": "stats-equipment-025-20240228",
+    "deviceId": "equipment-025",
+    "equipmentName": "電気炉",
+    "date": "2024-02-28",
+    "period": "daily",
+    "statistics": {
+      "operatingHours": 16.0,
+      "downtime": 8.0,
+      "efficiency": 66.67,
+      "averageTemperature": 1180.5,
+      "maxTemperature": 1195.8,
+      "minTemperature": 1165.2,
+      "heatTreatmentCycles": 4,
+      "energyConsumption": 2850.5,
+      "productionVolume": 850.2
+    },
+    "hourlyData": [
+      {
+        "hour": 0,
+        "status": "heating",
+        "avgTemperature": 850.5,
+        "heatingRate": 125.0,
+        "energyConsumption": 185.5
+      },
+      {
+        "hour": 1,
+        "status": "heating",
+        "avgTemperature": 975.0,
+        "heatingRate": 124.5,
+        "energyConsumption": 195.8
+      }
+    ],
+    "type": "daily-statistics",
+    "_ts": 1709114400
+  },
+  {
+    "id": "stats-equipment-012-20240229",
+    "deviceId": "equipment-012",
+    "equipmentName": "塗装ブース1号機",
+    "date": "2024-02-29",
+    "period": "daily",
+    "statistics": {
+      "operatingHours": 17.2,
+      "downtime": 6.8,
+      "efficiency": 71.67,
+      "averageAirflow": 848.5,
+      "maxAirflow": 865.0,
+      "minAirflow": 825.0,
+      "paintConsumption": 45.8,
+      "workpiecesProcessed": 125,
+      "defectiveFinish": 3,
+      "filterEfficiency": 98.5
+    },
+    "hourlyData": [
+      {
+        "hour": 8,
+        "status": "running",
+        "workpiecesProcessed": 8,
+        "paintUsed": 2.8,
+        "avgAirflow": 850.0
+      },
+      {
+        "hour": 9,
+        "status": "running",
+        "workpiecesProcessed": 9,
+        "paintUsed": 3.1,
+        "avgAirflow": 848.5
+      }
+    ],
+    "type": "daily-statistics",
+    "_ts": 1709200800
+  },
+  {
+    "id": "stats-equipment-018-20240229",
+    "deviceId": "equipment-018",
+    "equipmentName": "空圧コンプレッサー2号機",
+    "date": "2024-02-29",
+    "period": "daily",
+    "statistics": {
+      "operatingHours": 22.8,
+      "downtime": 1.2,
+      "efficiency": 95.0,
+      "averagePressure": 0.748,
+      "maxPressure": 0.78,
+      "minPressure": 0.72,
+      "totalAirProduced": 2850.5,
+      "energyConsumption": 185.8,
+      "loadFactor": 78.5
+    },
+    "hourlyData": [
+      {
+        "hour": 6,
+        "status": "running",
+        "avgPressure": 0.75,
+        "airProduced": 125.5,
+        "loadFactor": 80.2
+      },
+      {
+        "hour": 7,
+        "status": "running",
+        "avgPressure": 0.748,
+        "airProduced": 128.8,
+        "loadFactor": 82.1
+      }
+    ],
+    "type": "daily-statistics",
+    "_ts": 1709200800
+  },
+  {
+    "id": "stats-equipment-024-20240301",
+    "deviceId": "equipment-024",
+    "equipmentName": "研磨機",
+    "date": "2024-03-01",
+    "period": "daily",
+    "statistics": {
+      "operatingHours": 15.5,
+      "downtime": 8.5,
+      "efficiency": 64.58,
+      "averageSpindleSpeed": 1845.0,
+      "maxSpindleSpeed": 1900.0,
+      "minSpindleSpeed": 1800.0,
+      "workpiecesProcessed": 85,
+      "grindingWheelChanges": 2,
+      "coolantConsumption": 185.5,
+      "surfaceFinishQuality": 95.8
+    },
+    "hourlyData": [
+      {
+        "hour": 8,
+        "status": "running",
+        "workpiecesProcessed": 6,
+        "avgSpindleSpeed": 1850.0,
+        "coolantFlow": 25.8
+      },
+      {
+        "hour": 9,
+        "status": "wheel_change",
+        "workpiecesProcessed": 0,
+        "avgSpindleSpeed": 0,
+        "coolantFlow": 0
+      }
+    ],
+    "type": "daily-statistics",
+    "_ts": 1709287200
   }
 ]

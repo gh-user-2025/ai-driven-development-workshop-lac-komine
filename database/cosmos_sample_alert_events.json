@@ -264,5 +264,379 @@
     },
     "type": "alert-event",
     "_ts": 1708954000
+  },
+  {
+    "id": "alert-521-20240227080000",
+    "alertId": 521,
+    "equipmentId": "equipment-011",
+    "equipmentName": "第3製造ライン溶接ロボット",
+    "timestamp": "2024-02-27T08:00:00.000Z",
+    "eventType": "TRIGGERED",
+    "severity": "Medium",
+    "metricName": "wire_feed_rate",
+    "actualValue": 7.2,
+    "thresholdValue": 7.5,
+    "details": {
+      "message": "ワイヤー送り速度が低下しています",
+      "description": "溶接ワイヤーの送り速度が設定値を下回っています。ワイヤー供給機構を確認してください。",
+      "rule": {
+        "ruleId": 12,
+        "operator": "<",
+        "duration": 10
+      }
+    },
+    "context": {
+      "equipmentStatus": "running",
+      "operatingMode": "auto",
+      "lastMaintenance": "2024-01-10T08:30:00.000Z",
+      "additionalData": {
+        "arcVoltage": 24.2,
+        "shieldingGasFlow": 15.2,
+        "wireRemainingLength": 125.5
+      }
+    },
+    "location": {
+      "area": "第2工場1階C区画",
+      "coordinates": {
+        "x": 15.8,
+        "y": 22.3
+      }
+    },
+    "type": "alert-event",
+    "_ts": 1709020800
+  },
+  {
+    "id": "alert-522-20240227083000",
+    "alertId": 521,
+    "equipmentId": "equipment-011",
+    "equipmentName": "第3製造ライン溶接ロボット",
+    "timestamp": "2024-02-27T08:30:00.000Z",
+    "eventType": "ACKNOWLEDGED",
+    "acknowledgedBy": "中村直樹",
+    "details": {
+      "message": "ワイヤー送り速度低下アラート確認済み",
+      "comment": "ワイヤー供給ローラーを点検します。30分以内に復旧予定。"
+    },
+    "context": {
+      "action": "manual_acknowledge",
+      "previousState": "triggered",
+      "estimatedResolutionTime": 30
+    },
+    "type": "alert-event",
+    "_ts": 1709022600
+  },
+  {
+    "id": "alert-523-20240227090000",
+    "alertId": 521,
+    "equipmentId": "equipment-011",
+    "equipmentName": "第3製造ライン溶接ロボット",
+    "timestamp": "2024-02-27T09:00:00.000Z",
+    "eventType": "RESOLVED",
+    "resolvedBy": "中村直樹",
+    "details": {
+      "message": "ワイヤー送り速度正常化",
+      "comment": "ワイヤー供給ローラーの清掃とテンション調整を実施。正常動作確認。"
+    },
+    "context": {
+      "action": "manual_resolve",
+      "previousState": "acknowledged",
+      "resolutionTime": 60,
+      "additionalData": {
+        "normalizedWireFeedRate": 8.5,
+        "actionTaken": "cleaning_and_adjustment"
+      }
+    },
+    "type": "alert-event",
+    "_ts": 1709024400
+  },
+  {
+    "id": "alert-524-20240227103000",
+    "alertId": 524,
+    "equipmentId": "equipment-013",
+    "equipmentName": "乾燥炉",
+    "timestamp": "2024-02-27T10:30:00.000Z",
+    "eventType": "TRIGGERED",
+    "severity": "High",
+    "metricName": "oxygen_level",
+    "actualValue": 20.5,
+    "thresholdValue": 20.0,
+    "details": {
+      "message": "炉内酸素濃度上昇",
+      "description": "乾燥炉内の酸素濃度が安全レベルを超過しています。即座に確認が必要です。",
+      "rule": {
+        "ruleId": 15,
+        "operator": ">",
+        "duration": 5
+      }
+    },
+    "context": {
+      "equipmentStatus": "running",
+      "operatingMode": "auto",
+      "lastMaintenance": "2024-02-08T09:15:00.000Z",
+      "additionalData": {
+        "temperature": 185.5,
+        "gasFlow": 45.8,
+        "atmosphereControl": "nitrogen"
+      }
+    },
+    "location": {
+      "area": "第3工場1階B区画",
+      "coordinates": {
+        "x": 8.5,
+        "y": 12.8
+      }
+    },
+    "type": "alert-event",
+    "_ts": 1709026200
+  },
+  {
+    "id": "alert-525-20240227104500",
+    "alertId": 524,
+    "equipmentId": "equipment-013",
+    "equipmentName": "乾燥炉",
+    "timestamp": "2024-02-27T10:45:00.000Z",
+    "eventType": "RESOLVED",
+    "resolvedBy": "岡田敏之",
+    "details": {
+      "message": "酸素濃度正常化",
+      "comment": "窒素ガス流量を増加し、炉内雰囲気を調整。酸素濃度18.5%まで低下確認。"
+    },
+    "context": {
+      "action": "manual_resolve",
+      "previousState": "triggered",
+      "resolutionTime": 15,
+      "additionalData": {
+        "normalizedOxygenLevel": 18.5,
+        "nitrogenFlowIncrease": 5.0
+      }
+    },
+    "type": "alert-event",
+    "_ts": 1709027100
+  },
+  {
+    "id": "alert-526-20240227150000",
+    "alertId": 526,
+    "equipmentId": "equipment-016",
+    "equipmentName": "レーザー切断機",
+    "timestamp": "2024-02-27T15:00:00.000Z",
+    "eventType": "TRIGGERED",
+    "severity": "Critical",
+    "metricName": "beam_quality",
+    "actualValue": 1.8,
+    "thresholdValue": 1.5,
+    "details": {
+      "message": "レーザービーム品質劣化",
+      "description": "レーザービームの品質が大幅に劣化しています。切断品質に影響します。緊急点検が必要です。",
+      "rule": {
+        "ruleId": 18,
+        "operator": ">",
+        "duration": 2
+      }
+    },
+    "context": {
+      "equipmentStatus": "emergency_stop",
+      "operatingMode": "manual",
+      "lastMaintenance": "2024-03-02T15:20:00.000Z",
+      "additionalData": {
+        "laserPower": 2850.0,
+        "lensTemperature": 38.5,
+        "assistGasPressure": 15.5
+      }
+    },
+    "location": {
+      "area": "第2工場2階B区画",
+      "coordinates": {
+        "x": 18.2,
+        "y": 28.5
+      }
+    },
+    "type": "alert-event",
+    "_ts": 1709046000
+  },
+  {
+    "id": "alert-527-20240227151500",
+    "alertId": 526,
+    "equipmentId": "equipment-016",
+    "equipmentName": "レーザー切断機",
+    "timestamp": "2024-02-27T15:15:00.000Z",
+    "eventType": "ACKNOWLEDGED",
+    "acknowledgedBy": "藤井智子",
+    "details": {
+      "message": "レーザービーム品質劣化確認",
+      "comment": "レンズ汚れを確認。清掃作業を開始します。復旧まで約45分予定。"
+    },
+    "context": {
+      "action": "manual_acknowledge",
+      "previousState": "triggered",
+      "estimatedResolutionTime": 45
+    },
+    "type": "alert-event",
+    "_ts": 1709046900
+  },
+  {
+    "id": "alert-528-20240228080000",
+    "alertId": 528,
+    "equipmentId": "equipment-014",
+    "equipmentName": "射出成形機1号機",
+    "timestamp": "2024-02-28T08:00:00.000Z",
+    "eventType": "TRIGGERED",
+    "severity": "High",
+    "metricName": "injection_pressure",
+    "actualValue": 1380.0,
+    "thresholdValue": 1300.0,
+    "details": {
+      "message": "射出圧力異常上昇",
+      "description": "射出圧力が設定値を大幅に超過しています。金型や流路の詰まりの可能性があります。",
+      "rule": {
+        "ruleId": 20,
+        "operator": ">",
+        "duration": 3
+      }
+    },
+    "context": {
+      "equipmentStatus": "alarm",
+      "operatingMode": "auto",
+      "lastMaintenance": "2024-02-14T22:30:00.000Z",
+      "additionalData": {
+        "barrelTemperature": 248.5,
+        "moldTemperature": 85.2,
+        "cycleTime": 48.5
+      }
+    },
+    "location": {
+      "area": "第4工場1階A区画",
+      "coordinates": {
+        "x": 12.5,
+        "y": 18.8
+      }
+    },
+    "type": "alert-event",
+    "_ts": 1709114400
+  },
+  {
+    "id": "alert-529-20240228160000",
+    "alertId": 529,
+    "equipmentId": "equipment-020",
+    "equipmentName": "自動倉庫システム",
+    "timestamp": "2024-02-28T16:00:00.000Z",
+    "eventType": "TRIGGERED",
+    "severity": "Medium",
+    "metricName": "crane_position_error",
+    "actualValue": 15.0,
+    "thresholdValue": 10.0,
+    "details": {
+      "message": "クレーン位置決め精度低下",
+      "description": "自動倉庫クレーンの位置決め精度が低下しています。エンコーダーの確認が必要です。",
+      "rule": {
+        "ruleId": 22,
+        "operator": ">",
+        "duration": 5
+      }
+    },
+    "context": {
+      "equipmentStatus": "degraded",
+      "operatingMode": "auto",
+      "lastMaintenance": "2024-02-06T19:45:00.000Z",
+      "additionalData": {
+        "targetPosition": {
+          "x": 45.8,
+          "y": 12.3
+        },
+        "actualPosition": {
+          "x": 45.65,
+          "y": 12.45
+        },
+        "loadWeight": 125.5
+      }
+    },
+    "location": {
+      "area": "第1工場3階倉庫",
+      "coordinates": {
+        "x": 45.8,
+        "y": 12.3
+      }
+    },
+    "type": "alert-event",
+    "_ts": 1709143200
+  },
+  {
+    "id": "alert-530-20240229120000",
+    "alertId": 530,
+    "equipmentId": "equipment-025",
+    "equipmentName": "電気炉",
+    "timestamp": "2024-02-29T12:00:00.000Z",
+    "eventType": "TRIGGERED",
+    "severity": "Critical",
+    "metricName": "heating_element_current",
+    "actualValue": 220.5,
+    "thresholdValue": 200.0,
+    "details": {
+      "message": "ヒーター電流異常",
+      "description": "電気炉ヒーター素子の電流値が異常に高い値を示しています。ヒーター素子の損傷の可能性があります。",
+      "rule": {
+        "ruleId": 25,
+        "operator": ">",
+        "duration": 1
+      }
+    },
+    "context": {
+      "equipmentStatus": "emergency_stop",
+      "operatingMode": "manual",
+      "lastMaintenance": "2024-02-29T13:45:00.000Z",
+      "additionalData": {
+        "furnaceTemperature": 1195.8,
+        "targetTemperature": 1180.0,
+        "atmosphereControl": 0.85
+      }
+    },
+    "location": {
+      "area": "第4工場2階A区画",
+      "coordinates": {
+        "x": 8.2,
+        "y": 15.5
+      }
+    },
+    "type": "alert-event",
+    "_ts": 1709200800
+  },
+  {
+    "id": "alert-531-20240301090000",
+    "alertId": 531,
+    "equipmentId": "equipment-024",
+    "equipmentName": "研磨機",
+    "timestamp": "2024-03-01T09:00:00.000Z",
+    "eventType": "TRIGGERED",
+    "severity": "Medium",
+    "metricName": "grinding_wheel_vibration",
+    "actualValue": 4.5,
+    "thresholdValue": 4.0,
+    "details": {
+      "message": "砥石振動異常",
+      "description": "研磨砥石の振動値が許容値を超過しています。砥石のバランスまたは摩耗状態を確認してください。",
+      "rule": {
+        "ruleId": 28,
+        "operator": ">",
+        "duration": 8
+      }
+    },
+    "context": {
+      "equipmentStatus": "running",
+      "operatingMode": "auto",
+      "lastMaintenance": "2024-01-22T10:30:00.000Z",
+      "additionalData": {
+        "spindleSpeed": 1850.0,
+        "coolantFlow": 25.5,
+        "grindingForce": 195.2
+      }
+    },
+    "location": {
+      "area": "第2工場3階A区画",
+      "coordinates": {
+        "x": 22.8,
+        "y": 35.2
+      }
+    },
+    "type": "alert-event",
+    "_ts": 1709287200
   }
 ]

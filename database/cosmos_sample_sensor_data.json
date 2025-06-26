@@ -448,5 +448,455 @@
     },
     "ttl": 7776000,
     "_ts": 1708963200
+  },
+  {
+    "id": "sensor-equipment-011-20240227080000",
+    "deviceId": "equipment-011",
+    "equipmentName": "第3製造ライン溶接ロボット",
+    "timestamp": "2024-02-27T08:00:00.000Z",
+    "data": {
+      "temperature": {
+        "value": 68.5,
+        "unit": "celsius",
+        "status": "normal",
+        "quality": "good"
+      },
+      "current": {
+        "value": 25.8,
+        "unit": "ampere",
+        "status": "normal",
+        "quality": "good"
+      },
+      "arc_voltage": {
+        "value": 24.2,
+        "unit": "volt",
+        "status": "normal",
+        "quality": "good"
+      },
+      "wire_feed_rate": {
+        "value": 8.5,
+        "unit": "m/min",
+        "status": "normal",
+        "quality": "good"
+      },
+      "shielding_gas_flow": {
+        "value": 15.2,
+        "unit": "l/min",
+        "status": "normal",
+        "quality": "good"
+      }
+    },
+    "metadata": {
+      "firmwareVersion": "2.1.4",
+      "lastCalibration": "2024-02-15T00:00:00.000Z",
+      "sensorModel": "WeldingSensor-YAS100"
+    },
+    "ttl": 7776000,
+    "_ts": 1709020800
+  },
+  {
+    "id": "sensor-equipment-012-20240227090000",
+    "deviceId": "equipment-012",
+    "equipmentName": "塗装ブース1号機",
+    "timestamp": "2024-02-27T09:00:00.000Z",
+    "data": {
+      "temperature": {
+        "value": 22.8,
+        "unit": "celsius",
+        "status": "normal",
+        "quality": "good"
+      },
+      "humidity": {
+        "value": 45.2,
+        "unit": "percent",
+        "status": "normal",
+        "quality": "good"
+      },
+      "air_flow": {
+        "value": 850.0,
+        "unit": "m3/h",
+        "status": "normal",
+        "quality": "good"
+      },
+      "filter_pressure": {
+        "value": 245.0,
+        "unit": "pa",
+        "status": "normal",
+        "quality": "good"
+      },
+      "paint_pressure": {
+        "value": 2.8,
+        "unit": "bar",
+        "status": "normal",
+        "quality": "good"
+      }
+    },
+    "metadata": {
+      "firmwareVersion": "1.5.8",
+      "lastCalibration": "2024-01-20T00:00:00.000Z",
+      "sensorModel": "PaintingSensor-LI200"
+    },
+    "ttl": 7776000,
+    "_ts": 1709024400
+  },
+  {
+    "id": "sensor-equipment-013-20240227100000",
+    "deviceId": "equipment-013",
+    "equipmentName": "乾燥炉",
+    "timestamp": "2024-02-27T10:00:00.000Z",
+    "data": {
+      "temperature": {
+        "value": 185.5,
+        "unit": "celsius",
+        "status": "normal",
+        "quality": "good"
+      },
+      "internal_pressure": {
+        "value": 1.2,
+        "unit": "kpa",
+        "status": "normal",
+        "quality": "good"
+      },
+      "oxygen_level": {
+        "value": 18.5,
+        "unit": "percent",
+        "status": "normal",
+        "quality": "good"
+      },
+      "gas_flow": {
+        "value": 45.8,
+        "unit": "m3/h",
+        "status": "normal",
+        "quality": "good"
+      },
+      "burner_flame": {
+        "value": 1,
+        "unit": "boolean",
+        "status": "normal",
+        "quality": "good"
+      }
+    },
+    "metadata": {
+      "firmwareVersion": "3.2.1",
+      "lastCalibration": "2024-02-01T00:00:00.000Z",
+      "sensorModel": "OvenSensor-SNZ400"
+    },
+    "ttl": 7776000,
+    "_ts": 1709028000
+  },
+  {
+    "id": "sensor-equipment-016-20240227110000",
+    "deviceId": "equipment-016",
+    "equipmentName": "レーザー切断機",
+    "timestamp": "2024-02-27T11:00:00.000Z",
+    "data": {
+      "laser_power": {
+        "value": 2850.0,
+        "unit": "watt",
+        "status": "normal",
+        "quality": "good"
+      },
+      "beam_quality": {
+        "value": 1.1,
+        "unit": "m_squared",
+        "status": "normal",
+        "quality": "good"
+      },
+      "cutting_speed": {
+        "value": 1.8,
+        "unit": "m/min",
+        "status": "normal",
+        "quality": "good"
+      },
+      "assist_gas_pressure": {
+        "value": 15.5,
+        "unit": "bar",
+        "status": "normal",
+        "quality": "good"
+      },
+      "lens_temperature": {
+        "value": 35.2,
+        "unit": "celsius",
+        "status": "normal",
+        "quality": "good"
+      }
+    },
+    "metadata": {
+      "firmwareVersion": "4.1.2",
+      "lastCalibration": "2024-02-10T00:00:00.000Z",
+      "sensorModel": "LaserSensor-TRP300"
+    },
+    "ttl": 7776000,
+    "_ts": 1709031600
+  },
+  {
+    "id": "sensor-equipment-020-20240227120000",
+    "deviceId": "equipment-020",
+    "equipmentName": "自動倉庫システム",
+    "timestamp": "2024-02-27T12:00:00.000Z",
+    "data": {
+      "crane_position_x": {
+        "value": 45.8,
+        "unit": "meter",
+        "status": "normal",
+        "quality": "good"
+      },
+      "crane_position_y": {
+        "value": 12.3,
+        "unit": "meter",
+        "status": "normal",
+        "quality": "good"
+      },
+      "lift_height": {
+        "value": 8.7,
+        "unit": "meter",
+        "status": "normal",
+        "quality": "good"
+      },
+      "load_weight": {
+        "value": 125.5,
+        "unit": "kg",
+        "status": "normal",
+        "quality": "good"
+      },
+      "system_status": {
+        "value": 1,
+        "unit": "boolean",
+        "status": "normal",
+        "quality": "good"
+      }
+    },
+    "metadata": {
+      "firmwareVersion": "2.8.5",
+      "lastCalibration": "2024-01-25T00:00:00.000Z",
+      "sensorModel": "WarehouseSensor-DF150"
+    },
+    "ttl": 7776000,
+    "_ts": 1709035200
+  },
+  {
+    "id": "sensor-equipment-014-20240227130000",
+    "deviceId": "equipment-014",
+    "equipmentName": "射出成形機1号機",
+    "timestamp": "2024-02-27T13:00:00.000Z",
+    "data": {
+      "barrel_temperature": {
+        "value": 245.8,
+        "unit": "celsius",
+        "status": "normal",
+        "quality": "good"
+      },
+      "mold_temperature": {
+        "value": 85.2,
+        "unit": "celsius",
+        "status": "normal",
+        "quality": "good"
+      },
+      "injection_pressure": {
+        "value": 1250.0,
+        "unit": "bar",
+        "status": "normal",
+        "quality": "good"
+      },
+      "screw_position": {
+        "value": 45.8,
+        "unit": "mm",
+        "status": "normal",
+        "quality": "good"
+      },
+      "cycle_time": {
+        "value": 45.2,
+        "unit": "second",
+        "status": "normal",
+        "quality": "good"
+      }
+    },
+    "metadata": {
+      "firmwareVersion": "1.7.9",
+      "lastCalibration": "2024-02-05T00:00:00.000Z",
+      "sensorModel": "MoldingSensor-NE80"
+    },
+    "ttl": 7776000,
+    "_ts": 1709038800
+  },
+  {
+    "id": "sensor-equipment-025-20240227140000",
+    "deviceId": "equipment-025",
+    "equipmentName": "電気炉",
+    "timestamp": "2024-02-27T14:00:00.000Z",
+    "data": {
+      "furnace_temperature": {
+        "value": 1185.5,
+        "unit": "celsius",
+        "status": "normal",
+        "quality": "good"
+      },
+      "heating_element_current": {
+        "value": 185.2,
+        "unit": "ampere",
+        "status": "normal",
+        "quality": "good"
+      },
+      "atmosphere_control": {
+        "value": 0.85,
+        "unit": "percent_oxygen",
+        "status": "normal",
+        "quality": "good"
+      },
+      "insulation_temperature": {
+        "value": 125.8,
+        "unit": "celsius",
+        "status": "normal",
+        "quality": "good"
+      },
+      "door_position": {
+        "value": 0,
+        "unit": "boolean",
+        "status": "normal",
+        "quality": "good"
+      }
+    },
+    "metadata": {
+      "firmwareVersion": "2.3.7",
+      "lastCalibration": "2024-01-15T00:00:00.000Z",
+      "sensorModel": "FurnaceSensor-DDS200"
+    },
+    "ttl": 7776000,
+    "_ts": 1709042400
+  },
+  {
+    "id": "sensor-equipment-018-20240227150000",
+    "deviceId": "equipment-018",
+    "equipmentName": "空圧コンプレッサー2号機",
+    "timestamp": "2024-02-27T15:00:00.000Z",
+    "data": {
+      "discharge_pressure": {
+        "value": 0.75,
+        "unit": "mpa",
+        "status": "normal",
+        "quality": "good"
+      },
+      "discharge_temperature": {
+        "value": 95.8,
+        "unit": "celsius",
+        "status": "normal",
+        "quality": "good"
+      },
+      "oil_pressure": {
+        "value": 0.35,
+        "unit": "mpa",
+        "status": "normal",
+        "quality": "good"
+      },
+      "motor_current": {
+        "value": 45.2,
+        "unit": "ampere",
+        "status": "normal",
+        "quality": "good"
+      },
+      "vibration": {
+        "value": 1.8,
+        "unit": "mm/s",
+        "status": "normal",
+        "quality": "good"
+      }
+    },
+    "metadata": {
+      "firmwareVersion": "1.8.6",
+      "lastCalibration": "2024-02-10T00:00:00.000Z",
+      "sensorModel": "CompressorSensor-KB55"
+    },
+    "ttl": 7776000,
+    "_ts": 1709046000
+  },
+  {
+    "id": "sensor-equipment-024-20240227160000",
+    "deviceId": "equipment-024",
+    "equipmentName": "研磨機",
+    "timestamp": "2024-02-27T16:00:00.000Z",
+    "data": {
+      "spindle_speed": {
+        "value": 1850.0,
+        "unit": "rpm",
+        "status": "normal",
+        "quality": "good"
+      },
+      "grinding_wheel_temp": {
+        "value": 45.8,
+        "unit": "celsius",
+        "status": "normal",
+        "quality": "good"
+      },
+      "coolant_flow": {
+        "value": 25.5,
+        "unit": "l/min",
+        "status": "normal",
+        "quality": "good"
+      },
+      "surface_roughness": {
+        "value": 0.8,
+        "unit": "micrometer",
+        "status": "normal",
+        "quality": "good"
+      },
+      "grinding_force": {
+        "value": 185.2,
+        "unit": "newton",
+        "status": "normal",
+        "quality": "good"
+      }
+    },
+    "metadata": {
+      "firmwareVersion": "2.0.5",
+      "lastCalibration": "2024-01-22T00:00:00.000Z",
+      "sensorModel": "GrindingSensor-OKM84"
+    },
+    "ttl": 7776000,
+    "_ts": 1709049600
+  },
+  {
+    "id": "sensor-equipment-001-20240228100000",
+    "deviceId": "equipment-001",
+    "equipmentName": "第1製造ライン主モーター",
+    "timestamp": "2024-02-28T10:00:00.000Z",
+    "data": {
+      "temperature": {
+        "value": 76.2,
+        "unit": "celsius",
+        "status": "warning",
+        "quality": "good"
+      },
+      "vibration": {
+        "value": 2.4,
+        "unit": "mm/s",
+        "status": "normal",
+        "quality": "good"
+      },
+      "current": {
+        "value": 13.1,
+        "unit": "ampere",
+        "status": "normal",
+        "quality": "good"
+      },
+      "voltage": {
+        "value": 198.8,
+        "unit": "volt",
+        "status": "normal",
+        "quality": "good"
+      },
+      "power_factor": {
+        "value": 0.87,
+        "unit": "ratio",
+        "status": "normal",
+        "quality": "good"
+      }
+    },
+    "metadata": {
+      "firmwareVersion": "1.9.2",
+      "lastCalibration": "2024-02-15T00:00:00.000Z",
+      "sensorModel": "MotorSensor-TDK30"
+    },
+    "ttl": 7776000,
+    "_ts": 1709114400
   }
 ]
