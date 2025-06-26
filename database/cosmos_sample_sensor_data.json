@@ -1,0 +1,452 @@
+[
+  {
+    "id": "sensor-equipment-001-20240226140000",
+    "deviceId": "equipment-001",
+    "equipmentName": "第1製造ライン主モーター",
+    "timestamp": "2024-02-26T14:00:00.000Z",
+    "data": {
+      "temperature": {
+        "value": 74.8,
+        "unit": "celsius",
+        "status": "normal",
+        "quality": "good"
+      },
+      "vibration": {
+        "value": 2.1,
+        "unit": "mm/s",
+        "status": "normal",
+        "quality": "good"
+      },
+      "current": {
+        "value": 12.3,
+        "unit": "ampere",
+        "status": "normal",
+        "quality": "good"
+      },
+      "voltage": {
+        "value": 201.5,
+        "unit": "volt",
+        "status": "normal",
+        "quality": "good"
+      }
+    },
+    "location": {
+      "area": "第1工場1階A区画",
+      "coordinates": {
+        "x": 15.5,
+        "y": 23.1
+      }
+    },
+    "metadata": {
+      "firmwareVersion": "1.2.3",
+      "lastCalibration": "2024-02-01T00:00:00.000Z",
+      "sensorModel": "MultiSensor-Pro-v2"
+    },
+    "ttl": 7776000,
+    "_ts": 1708963200
+  },
+  {
+    "id": "sensor-equipment-002-20240226140000",
+    "deviceId": "equipment-002",
+    "equipmentName": "第2製造ライン組立ロボット",
+    "timestamp": "2024-02-26T14:00:00.000Z",
+    "data": {
+      "temperature": {
+        "value": 68.2,
+        "unit": "celsius",
+        "status": "normal",
+        "quality": "good"
+      },
+      "vibration": {
+        "value": 1.8,
+        "unit": "mm/s",
+        "status": "normal",
+        "quality": "good"
+      },
+      "position_x": {
+        "value": 125.7,
+        "unit": "mm",
+        "status": "normal",
+        "quality": "good"
+      },
+      "position_y": {
+        "value": 89.3,
+        "unit": "mm",
+        "status": "normal",
+        "quality": "good"
+      },
+      "servo_current": {
+        "value": 8.9,
+        "unit": "ampere",
+        "status": "normal",
+        "quality": "good"
+      }
+    },
+    "location": {
+      "area": "第1工場1階B区画",
+      "coordinates": {
+        "x": 25.2,
+        "y": 18.7
+      }
+    },
+    "metadata": {
+      "firmwareVersion": "2.1.4",
+      "lastCalibration": "2024-01-20T00:00:00.000Z",
+      "sensorModel": "RobotSensor-X1"
+    },
+    "ttl": 7776000,
+    "_ts": 1708963200
+  },
+  {
+    "id": "sensor-equipment-003-20240226140000",
+    "deviceId": "equipment-003",
+    "equipmentName": "空圧コンプレッサー1号機",
+    "timestamp": "2024-02-26T14:00:00.000Z",
+    "data": {
+      "temperature": {
+        "value": 76.5,
+        "unit": "celsius",
+        "status": "normal",
+        "quality": "good"
+      },
+      "pressure": {
+        "value": 6.8,
+        "unit": "bar",
+        "status": "normal",
+        "quality": "good"
+      },
+      "flow_rate": {
+        "value": 45.2,
+        "unit": "m3/min",
+        "status": "normal",
+        "quality": "good"
+      },
+      "vibration": {
+        "value": 3.2,
+        "unit": "mm/s",
+        "status": "normal",
+        "quality": "good"
+      },
+      "power_consumption": {
+        "value": 35.8,
+        "unit": "kW",
+        "status": "normal",
+        "quality": "good"
+      }
+    },
+    "location": {
+      "area": "第1工場地下1階機械室",
+      "coordinates": {
+        "x": 8.1,
+        "y": 12.4
+      }
+    },
+    "metadata": {
+      "firmwareVersion": "1.5.2",
+      "lastCalibration": "2024-01-25T00:00:00.000Z",
+      "sensorModel": "CompressorMonitor-H5"
+    },
+    "ttl": 7776000,
+    "_ts": 1708963200
+  },
+  {
+    "id": "sensor-equipment-004-20240226140000",
+    "deviceId": "equipment-004",
+    "equipmentName": "品質検査装置",
+    "timestamp": "2024-02-26T14:00:00.000Z",
+    "data": {
+      "temperature": {
+        "value": 22.8,
+        "unit": "celsius",
+        "status": "normal",
+        "quality": "good"
+      },
+      "humidity": {
+        "value": 45.2,
+        "unit": "percent",
+        "status": "normal",
+        "quality": "good"
+      },
+      "illumination": {
+        "value": 850.0,
+        "unit": "lux",
+        "status": "normal",
+        "quality": "good"
+      },
+      "measurement_accuracy": {
+        "value": 99.8,
+        "unit": "percent",
+        "status": "normal",
+        "quality": "excellent"
+      }
+    },
+    "location": {
+      "area": "第1工場2階品質管理室",
+      "coordinates": {
+        "x": 32.1,
+        "y": 15.8
+      }
+    },
+    "metadata": {
+      "firmwareVersion": "3.2.1",
+      "lastCalibration": "2024-02-01T00:00:00.000Z",
+      "sensorModel": "InspectionSensor-IV3"
+    },
+    "ttl": 7776000,
+    "_ts": 1708963200
+  },
+  {
+    "id": "sensor-equipment-005-20240226140000",
+    "deviceId": "equipment-005",
+    "equipmentName": "包装機械ライン",
+    "timestamp": "2024-02-26T14:00:00.000Z",
+    "data": {
+      "temperature": {
+        "value": 65.3,
+        "unit": "celsius",
+        "status": "normal",
+        "quality": "good"
+      },
+      "vibration": {
+        "value": 3.8,
+        "unit": "mm/s",
+        "status": "warning",
+        "quality": "fair"
+      },
+      "speed": {
+        "value": 450.0,
+        "unit": "rpm",
+        "status": "normal",
+        "quality": "good"
+      },
+      "tension": {
+        "value": 1250.0,
+        "unit": "N",
+        "status": "normal",
+        "quality": "good"
+      }
+    },
+    "location": {
+      "area": "第1工場1階C区画",
+      "coordinates": {
+        "x": 42.7,
+        "y": 28.3
+      }
+    },
+    "metadata": {
+      "firmwareVersion": "1.8.7",
+      "lastCalibration": "2024-02-05T00:00:00.000Z",
+      "sensorModel": "PackagingSensor-TJ5"
+    },
+    "ttl": 7776000,
+    "_ts": 1708963200
+  },
+  {
+    "id": "sensor-equipment-007-20240226140000",
+    "deviceId": "equipment-007",
+    "equipmentName": "切削加工機CNC",
+    "timestamp": "2024-02-26T14:00:00.000Z",
+    "data": {
+      "temperature": {
+        "value": 82.7,
+        "unit": "celsius",
+        "status": "normal",
+        "quality": "good"
+      },
+      "vibration": {
+        "value": 4.5,
+        "unit": "mm/s",
+        "status": "warning",
+        "quality": "fair"
+      },
+      "spindle_speed": {
+        "value": 2800.0,
+        "unit": "rpm",
+        "status": "normal",
+        "quality": "good"
+      },
+      "cutting_force": {
+        "value": 850.0,
+        "unit": "N",
+        "status": "normal",
+        "quality": "good"
+      },
+      "coolant_temperature": {
+        "value": 18.5,
+        "unit": "celsius",
+        "status": "normal",
+        "quality": "good"
+      }
+    },
+    "location": {
+      "area": "第2工場1階B区画",
+      "coordinates": {
+        "x": 18.9,
+        "y": 22.1
+      }
+    },
+    "metadata": {
+      "firmwareVersion": "2.3.5",
+      "lastCalibration": "2024-02-12T00:00:00.000Z",
+      "sensorModel": "CncSensor-DMG5"
+    },
+    "ttl": 7776000,
+    "_ts": 1708963200
+  },
+  {
+    "id": "sensor-equipment-008-20240226140000",
+    "deviceId": "equipment-008",
+    "equipmentName": "搬送ベルトコンベア",
+    "timestamp": "2024-02-26T14:00:00.000Z",
+    "data": {
+      "temperature": {
+        "value": 35.2,
+        "unit": "celsius",
+        "status": "normal",
+        "quality": "good"
+      },
+      "vibration": {
+        "value": 2.8,
+        "unit": "mm/s",
+        "status": "normal",
+        "quality": "good"
+      },
+      "speed": {
+        "value": 1.5,
+        "unit": "m/s",
+        "status": "normal",
+        "quality": "good"
+      },
+      "current": {
+        "value": 8.2,
+        "unit": "ampere",
+        "status": "normal",
+        "quality": "good"
+      },
+      "load": {
+        "value": 65.0,
+        "unit": "percent",
+        "status": "normal",
+        "quality": "good"
+      }
+    },
+    "location": {
+      "area": "第1工場1階全域",
+      "coordinates": {
+        "x": 30.0,
+        "y": 25.0
+      }
+    },
+    "metadata": {
+      "firmwareVersion": "1.4.2",
+      "lastCalibration": "2024-02-15T00:00:00.000Z",
+      "sensorModel": "ConveyorSensor-TCC3"
+    },
+    "ttl": 7776000,
+    "_ts": 1708963200
+  },
+  {
+    "id": "sensor-equipment-009-20240226140000",
+    "deviceId": "equipment-009",
+    "equipmentName": "冷却システム",
+    "timestamp": "2024-02-26T14:00:00.000Z",
+    "data": {
+      "temperature": {
+        "value": 8.5,
+        "unit": "celsius",
+        "status": "normal",
+        "quality": "good"
+      },
+      "flow_rate": {
+        "value": 125.0,
+        "unit": "L/min",
+        "status": "normal",
+        "quality": "good"
+      },
+      "pressure": {
+        "value": 3.2,
+        "unit": "bar",
+        "status": "normal",
+        "quality": "good"
+      },
+      "power_consumption": {
+        "value": 15.8,
+        "unit": "kW",
+        "status": "normal",
+        "quality": "good"
+      }
+    },
+    "location": {
+      "area": "第1工場屋上",
+      "coordinates": {
+        "x": 25.0,
+        "y": 35.0
+      }
+    },
+    "metadata": {
+      "firmwareVersion": "2.1.8",
+      "lastCalibration": "2024-02-18T00:00:00.000Z",
+      "sensorModel": "CoolingSensor-DAI15"
+    },
+    "ttl": 7776000,
+    "_ts": 1708963200
+  },
+  {
+    "id": "sensor-equipment-010-20240226140000",
+    "deviceId": "equipment-010",
+    "equipmentName": "電力制御盤",
+    "timestamp": "2024-02-26T14:00:00.000Z",
+    "data": {
+      "voltage_r": {
+        "value": 201.2,
+        "unit": "volt",
+        "status": "normal",
+        "quality": "good"
+      },
+      "voltage_s": {
+        "value": 200.8,
+        "unit": "volt",
+        "status": "normal",
+        "quality": "good"
+      },
+      "voltage_t": {
+        "value": 201.5,
+        "unit": "volt",
+        "status": "normal",
+        "quality": "good"
+      },
+      "current_total": {
+        "value": 125.8,
+        "unit": "ampere",
+        "status": "normal",
+        "quality": "good"
+      },
+      "power_factor": {
+        "value": 0.92,
+        "unit": "ratio",
+        "status": "normal",
+        "quality": "good"
+      },
+      "frequency": {
+        "value": 50.1,
+        "unit": "Hz",
+        "status": "normal",
+        "quality": "good"
+      }
+    },
+    "location": {
+      "area": "第1工場地下1階電気室",
+      "coordinates": {
+        "x": 5.2,
+        "y": 8.7
+      }
+    },
+    "metadata": {
+      "firmwareVersion": "1.9.3",
+      "lastCalibration": "2024-02-20T00:00:00.000Z",
+      "sensorModel": "PowerSensor-PAN45"
+    },
+    "ttl": 7776000,
+    "_ts": 1708963200
+  }
+]
