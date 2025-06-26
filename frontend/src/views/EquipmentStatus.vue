@@ -4,6 +4,10 @@
     <div class="page-header">
       <h1>🏭 設備稼働状況</h1>
       <p>工場内全設備のリアルタイム稼働状況を監視</p>
+      <div class="api-status" :class="{ 'api-active': apiMode, 'api-offline': !apiMode }">
+        <span v-if="apiMode">🌐 API連携モード</span>
+        <span v-else>💾 オフラインモード</span>
+      </div>
     </div>
 
     <!-- フィルター・検索セクション -->
@@ -158,7 +162,7 @@
 </template>
 
 <script>
-import { equipmentService } from '../services/equipmentService.js'
+import { equipmentServiceWithApi } from '../services/apiService.js'
 
 export default {
   name: 'EquipmentStatus',
@@ -172,7 +176,8 @@ export default {
         equipmentType: '',
         location: ''
       },
-      loading: true
+      loading: true,
+      apiMode: false
     }
   },
   async mounted() {
@@ -182,9 +187,16 @@ export default {
     async loadData() {
       try {
         this.loading = true
-        this.equipments = await equipmentService.getAll()
+        
+        // API統合サービスを使用（自動的にフォールバック）
+        this.equipments = await equipmentServiceWithApi.getAll()
         this.filteredEquipments = [...this.equipments]
-        this.equipmentTypes = equipmentService.getEquipmentTypes()
+        this.equipmentTypes = equipmentServiceWithApi.getEquipmentTypes()
+        
+        // API接続確認
+        const connectionTest = await equipmentServiceWithApi.testConnection()
+        this.apiMode = connectionTest.connected
+        
       } catch (error) {
         console.error('設備データの読み込みに失敗しました:', error)
       } finally {
@@ -195,7 +207,10 @@ export default {
     async applyFilters() {
       try {
         this.loading = true
-        this.filteredEquipments = await equipmentService.getFiltered(this.filters)
+        
+        // API統合サービスを使用
+        this.filteredEquipments = await equipmentServiceWithApi.getFiltered(this.filters)
+        
       } catch (error) {
         console.error('フィルタリング処理に失敗しました:', error)
       } finally {
@@ -268,6 +283,27 @@ export default {
 .page-header p {
   color: #6c757d;
   font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.api-status {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.api-status.api-active {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.api-status.api-offline {
+  background-color: #fff3cd;
+  color: #856404;
+  border: 1px solid #ffeaa7;
 }
 
 /* フィルターセクション */

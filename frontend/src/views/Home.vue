@@ -83,6 +83,15 @@
     <!-- 最近の活動セクション -->
     <section class="recent-activity-section">
       <h2>最近の活動</h2>
+      
+      <!-- API接続状況 -->
+      <div class="connection-status" :class="{ 'connected': apiConnected, 'disconnected': !apiConnected }">
+        <div class="status-indicator">
+          <span class="status-icon">{{ apiConnected ? '🟢' : '🔴' }}</span>
+          <span class="status-text">{{ connectionStatus }}</span>
+        </div>
+      </div>
+
       <div class="activity-list">
         <div class="activity-item">
           <div class="activity-icon">🔧</div>
@@ -116,7 +125,7 @@
 </template>
 
 <script>
-import { equipmentService } from '../services/equipmentService.js'
+import { equipmentServiceWithApi } from '../services/apiService.js'
 
 export default {
   name: 'Home',
@@ -127,7 +136,9 @@ export default {
         activeEquipment: 0,
         maintenanceEquipment: 0,
         averageEfficiency: 0
-      }
+      },
+      apiConnected: false,
+      connectionStatus: ''
     }
   },
   computed: {
@@ -136,12 +147,24 @@ export default {
     }
   },
   async mounted() {
+    await this.checkApiConnection()
     await this.loadStatistics()
   },
   methods: {
+    async checkApiConnection() {
+      try {
+        const result = await equipmentServiceWithApi.testConnection()
+        this.apiConnected = result.connected
+        this.connectionStatus = result.message
+      } catch (error) {
+        this.apiConnected = false
+        this.connectionStatus = 'API接続チェックに失敗しました'
+      }
+    },
+
     async loadStatistics() {
       try {
-        this.statistics = await equipmentService.getStatistics()
+        this.statistics = await equipmentServiceWithApi.getStatistics()
       } catch (error) {
         console.error('統計データの読み込みに失敗しました:', error)
       }
@@ -308,6 +331,38 @@ export default {
   color: #2c3e50;
   margin-bottom: 1.5rem;
   font-size: 1.8rem;
+}
+
+/* API接続状況 */
+.connection-status {
+  background: white;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.connection-status.connected {
+  border-left: 4px solid #28a745;
+}
+
+.connection-status.disconnected {
+  border-left: 4px solid #dc3545;
+}
+
+.status-indicator {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.status-icon {
+  font-size: 1rem;
+}
+
+.status-text {
+  font-size: 0.9rem;
+  color: #6c757d;
 }
 
 .activity-list {

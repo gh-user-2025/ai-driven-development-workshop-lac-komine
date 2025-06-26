@@ -1,4 +1,4 @@
-// 設備データサービス
+// 設備データサービス（API統合前の基本版）
 export const equipmentService = {
   // サンプル設備データ（既存のJSONファイルから）
   sampleData: [
