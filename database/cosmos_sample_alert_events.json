@@ -1,0 +1,268 @@
+[
+  {
+    "id": "alert-501-20240226143000",
+    "alertId": 501,
+    "equipmentId": "equipment-005",
+    "equipmentName": "包装機械ライン",
+    "timestamp": "2024-02-26T14:30:00.000Z",
+    "eventType": "TRIGGERED",
+    "severity": "High",
+    "metricName": "vibration",
+    "actualValue": 4.1,
+    "thresholdValue": 4.0,
+    "details": {
+      "message": "振動値が警告レベルに達しました",
+      "description": "包装機械ラインの振動値が設定された閾値を超過しています。機械の状態を確認してください。",
+      "rule": {
+        "ruleId": 7,
+        "operator": ">",
+        "duration": 5
+      }
+    },
+    "context": {
+      "equipmentStatus": "running",
+      "operatingMode": "auto",
+      "lastMaintenance": "2024-02-05T16:45:00.000Z",
+      "additionalData": {
+        "temperature": 65.8,
+        "speed": 445.0,
+        "tension": 1280.0
+      }
+    },
+    "location": {
+      "area": "第1工場1階C区画",
+      "coordinates": {
+        "x": 42.7,
+        "y": 28.3
+      }
+    },
+    "type": "alert-event",
+    "_ts": 1708963800
+  },
+  {
+    "id": "alert-501-20240226144500",
+    "alertId": 501,
+    "equipmentId": "equipment-005",
+    "equipmentName": "包装機械ライン",
+    "timestamp": "2024-02-26T14:45:00.000Z",
+    "eventType": "ACKNOWLEDGED",
+    "severity": "High",
+    "metricName": "vibration",
+    "actualValue": 4.0,
+    "thresholdValue": 4.0,
+    "details": {
+      "message": "アラートが確認されました",
+      "description": "現場担当者がアラートを確認し、対応を開始しました。",
+      "acknowledgedBy": "山田次郎",
+      "acknowledgedComment": "現地確認を実施します。振動の原因を調査中。"
+    },
+    "context": {
+      "user": "山田次郎",
+      "action": "acknowledge",
+      "previousState": "active",
+      "additionalData": {
+        "responseTime": 15
+      }
+    },
+    "location": {
+      "area": "第1工場1階C区画",
+      "coordinates": {
+        "x": 42.7,
+        "y": 28.3
+      }
+    },
+    "type": "alert-event",
+    "_ts": 1708964700
+  },
+  {
+    "id": "alert-502-20240226151200",
+    "alertId": 502,
+    "equipmentId": "equipment-007",
+    "equipmentName": "切削加工機CNC",
+    "timestamp": "2024-02-26T15:12:00.000Z",
+    "eventType": "TRIGGERED",
+    "severity": "High",
+    "metricName": "vibration",
+    "actualValue": 4.8,
+    "thresholdValue": 4.5,
+    "details": {
+      "message": "CNC加工機の振動値が異常です",
+      "description": "切削加工機CNcの振動値が警告レベルを超過しました。工具の摩耗または切削条件の見直しが必要です。",
+      "rule": {
+        "ruleId": 8,
+        "operator": ">",
+        "duration": 10
+      }
+    },
+    "context": {
+      "equipmentStatus": "running",
+      "operatingMode": "auto",
+      "currentProgram": "PROG_001_SHAFT",
+      "lastMaintenance": "2024-02-12T11:15:00.000Z",
+      "additionalData": {
+        "temperature": 84.2,
+        "spindleSpeed": 2850.0,
+        "cuttingForce": 892.0,
+        "coolantTemp": 19.1
+      }
+    },
+    "location": {
+      "area": "第2工場1階B区画",
+      "coordinates": {
+        "x": 18.9,
+        "y": 22.1
+      }
+    },
+    "type": "alert-event",
+    "_ts": 1708966320
+  },
+  {
+    "id": "alert-502-20240226152800",
+    "alertId": 502,
+    "equipmentId": "equipment-007",
+    "equipmentName": "切削加工機CNC",
+    "timestamp": "2024-02-26T15:28:00.000Z",
+    "eventType": "ACKNOWLEDGED",
+    "severity": "High",
+    "metricName": "vibration",
+    "actualValue": 4.6,
+    "thresholdValue": 4.5,
+    "details": {
+      "message": "アラートが確認されました",
+      "description": "技師がアラートを確認し、工具状態の点検を開始しました。",
+      "acknowledgedBy": "伊藤誠",
+      "acknowledgedComment": "工具摩耗の可能性があります。工具交換を検討します。"
+    },
+    "context": {
+      "user": "伊藤誠",
+      "action": "acknowledge",
+      "previousState": "active",
+      "additionalData": {
+        "responseTime": 16
+      }
+    },
+    "location": {
+      "area": "第2工場1階B区画",
+      "coordinates": {
+        "x": 18.9,
+        "y": 22.1
+      }
+    },
+    "type": "alert-event",
+    "_ts": 1708967280
+  },
+  {
+    "id": "alert-502-20240226160000",
+    "alertId": 502,
+    "equipmentId": "equipment-007",
+    "equipmentName": "切削加工機CNC",
+    "timestamp": "2024-02-26T16:00:00.000Z",
+    "eventType": "RESOLVED",
+    "severity": "High",
+    "metricName": "vibration",
+    "actualValue": 3.8,
+    "thresholdValue": 4.5,
+    "details": {
+      "message": "アラートが解決されました",
+      "description": "工具交換により振動値が正常範囲に復帰しました。",
+      "resolvedBy": "伊藤誠",
+      "resolution": "摩耗した切削工具を新品に交換。振動値が正常に戻り、加工精度も改善。",
+      "preventiveAction": "工具寿命管理システムの導入を検討"
+    },
+    "context": {
+      "user": "伊藤誠",
+      "action": "resolve",
+      "previousState": "acknowledged",
+      "additionalData": {
+        "resolutionTime": 48,
+        "cost": 15000,
+        "downtime": 32
+      }
+    },
+    "location": {
+      "area": "第2工場1階B区画",
+      "coordinates": {
+        "x": 18.9,
+        "y": 22.1
+      }
+    },
+    "type": "alert-event",
+    "_ts": 1708969200
+  },
+  {
+    "id": "alert-503-20240226113000",
+    "alertId": 503,
+    "equipmentId": "equipment-009",
+    "equipmentName": "冷却システム",
+    "timestamp": "2024-02-26T11:30:00.000Z",
+    "eventType": "TRIGGERED",
+    "severity": "Medium",
+    "metricName": "temperature",
+    "actualValue": 12.5,
+    "thresholdValue": 12.0,
+    "details": {
+      "message": "冷却システムの温度が基準値を超過",
+      "description": "冷却システムの冷却水温度が設定値を上回っています。冷却効率の低下が予想されます。",
+      "rule": {
+        "ruleId": 11,
+        "operator": ">",
+        "duration": 15
+      }
+    },
+    "context": {
+      "equipmentStatus": "running",
+      "operatingMode": "auto",
+      "outsideTemperature": 18.5,
+      "lastMaintenance": "2024-02-18T15:00:00.000Z",
+      "additionalData": {
+        "flowRate": 122.0,
+        "pressure": 3.1,
+        "powerConsumption": 16.2
+      }
+    },
+    "location": {
+      "area": "第1工場屋上",
+      "coordinates": {
+        "x": 25.0,
+        "y": 35.0
+      }
+    },
+    "type": "alert-event",
+    "_ts": 1708952200
+  },
+  {
+    "id": "alert-503-20240226120000",
+    "alertId": 503,
+    "equipmentId": "equipment-009",
+    "equipmentName": "冷却システム",
+    "timestamp": "2024-02-26T12:00:00.000Z",
+    "eventType": "RESOLVED",
+    "severity": "Medium",
+    "metricName": "temperature",
+    "actualValue": 9.2,
+    "thresholdValue": 12.0,
+    "details": {
+      "message": "アラートが自動解決されました",
+      "description": "外気温の低下により冷却システムの温度が自然に正常範囲に復帰しました。",
+      "resolution": "外気温低下による自然回復。システムの異常はなし。",
+      "autoResolved": true
+    },
+    "context": {
+      "action": "auto_resolve",
+      "previousState": "active",
+      "additionalData": {
+        "outsideTemperatureChange": -3.2,
+        "resolutionTime": 30
+      }
+    },
+    "location": {
+      "area": "第1工場屋上",
+      "coordinates": {
+        "x": 25.0,
+        "y": 35.0
+      }
+    },
+    "type": "alert-event",
+    "_ts": 1708954000
+  }
+]

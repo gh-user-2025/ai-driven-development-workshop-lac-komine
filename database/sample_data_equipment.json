@@ -1,0 +1,122 @@
+[
+  {
+    "equipmentName": "第1製造ライン主モーター",
+    "equipmentType": "Motor",
+    "serialNumber": "MOT-001-2023",
+    "manufacturer": "東洋電機製造",
+    "model": "TDK-3000",
+    "location": "第1工場1階A区画",
+    "installationDate": "2023-01-15",
+    "maintenanceCycleHours": 720,
+    "responsiblePerson": "田中太郎",
+    "status": "Active"
+  },
+  {
+    "equipmentName": "第2製造ライン組立ロボット",
+    "equipmentType": "Robot",
+    "serialNumber": "ROB-002-2023",
+    "manufacturer": "三菱電機",
+    "model": "RV-20F",
+    "location": "第1工場1階B区画",
+    "installationDate": "2023-02-20",
+    "maintenanceCycleHours": 1440,
+    "responsiblePerson": "佐藤花子",
+    "status": "Active"
+  },
+  {
+    "equipmentName": "空圧コンプレッサー1号機",
+    "equipmentType": "Compressor",
+    "serialNumber": "COM-003-2023",
+    "manufacturer": "日立産機システム",
+    "model": "OSP-37.5B",
+    "location": "第1工場地下1階機械室",
+    "installationDate": "2023-03-10",
+    "maintenanceCycleHours": 2160,
+    "responsiblePerson": "鈴木一郎",
+    "status": "Active"
+  },
+  {
+    "equipmentName": "品質検査装置",
+    "equipmentType": "Inspection",
+    "serialNumber": "INS-004-2023",
+    "manufacturer": "キーエンス",
+    "model": "IV-X3000",
+    "location": "第1工場2階品質管理室",
+    "installationDate": "2023-04-05",
+    "maintenanceCycleHours": 8760,
+    "responsiblePerson": "高橋美咲",
+    "status": "Active"
+  },
+  {
+    "equipmentName": "包装機械ライン",
+    "equipmentType": "Packaging",
+    "serialNumber": "PKG-005-2023",
+    "manufacturer": "東洋自動機",
+    "model": "TJP-500",
+    "location": "第1工場1階C区画",
+    "installationDate": "2023-05-12",
+    "maintenanceCycleHours": 1080,
+    "responsiblePerson": "山田次郎",
+    "status": "Active"
+  },
+  {
+    "equipmentName": "プレス機1号機",
+    "equipmentType": "Press",
+    "serialNumber": "PRS-006-2022",
+    "manufacturer": "アマダ",
+    "model": "HFP-1703",
+    "location": "第2工場1階A区画",
+    "installationDate": "2022-11-15",
+    "maintenanceCycleHours": 480,
+    "responsiblePerson": "渡辺恵子",
+    "status": "Maintenance"
+  },
+  {
+    "equipmentName": "切削加工機CNC",
+    "equipmentType": "CNC",
+    "serialNumber": "CNC-007-2023",
+    "manufacturer": "DMG森精機",
+    "model": "NHX-5500",
+    "location": "第2工場1階B区画",
+    "installationDate": "2023-06-20",
+    "maintenanceCycleHours": 720,
+    "responsiblePerson": "伊藤誠",
+    "status": "Active"
+  },
+  {
+    "equipmentName": "搬送ベルトコンベア",
+    "equipmentType": "Conveyor",
+    "serialNumber": "CNV-008-2023",
+    "manufacturer": "椿本チエイン",
+    "model": "TCC-3000",
+    "location": "第1工場1階全域",
+    "installationDate": "2023-07-01",
+    "maintenanceCycleHours": 4320,
+    "responsiblePerson": "加藤健一",
+    "status": "Active"
+  },
+  {
+    "equipmentName": "冷却システム",
+    "equipmentType": "Cooling",
+    "serialNumber": "COL-009-2022",
+    "manufacturer": "ダイキン工業",
+    "model": "AHU-15",
+    "location": "第1工場屋上",
+    "installationDate": "2022-12-01",
+    "maintenanceCycleHours": 2880,
+    "responsiblePerson": "松本雅志",
+    "status": "Active"
+  },
+  {
+    "equipmentName": "電力制御盤",
+    "equipmentType": "Electrical",
+    "serialNumber": "ELC-010-2023",
+    "manufacturer": "パナソニック",
+    "model": "ACVF-45K",
+    "location": "第1工場地下1階電気室",
+    "installationDate": "2023-01-25",
+    "maintenanceCycleHours": 8760,
+    "responsiblePerson": "小林浩二",
+    "status": "Active"
+  }
+]

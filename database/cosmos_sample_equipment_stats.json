@@ -1,0 +1,164 @@
+[
+  {
+    "id": "stats-equipment-001-20240226",
+    "deviceId": "equipment-001",
+    "equipmentName": "第1製造ライン主モーター",
+    "date": "2024-02-26",
+    "period": "daily",
+    "statistics": {
+      "operatingHours": 21.5,
+      "downtime": 2.5,
+      "efficiency": 89.58,
+      "averageTemperature": 74.2,
+      "maxTemperature": 78.9,
+      "minTemperature": 69.1,
+      "averageVibration": 2.1,
+      "maxVibration": 2.8,
+      "alertCount": 1,
+      "criticalAlertCount": 0,
+      "totalPowerConsumption": 168.5
+    },
+    "hourlyData": [
+      {
+        "hour": 0,
+        "status": "running",
+        "avgTemperature": 72.1,
+        "avgVibration": 2.0,
+        "powerConsumption": 7.2
+      },
+      {
+        "hour": 1,
+        "status": "running",
+        "avgTemperature": 71.8,
+        "avgVibration": 2.1,
+        "powerConsumption": 7.1
+      },
+      {
+        "hour": 2,
+        "status": "maintenance",
+        "avgTemperature": 0.0,
+        "avgVibration": 0.0,
+        "powerConsumption": 0.0
+      },
+      {
+        "hour": 3,
+        "status": "maintenance",
+        "avgTemperature": 0.0,
+        "avgVibration": 0.0,
+        "powerConsumption": 0.0
+      },
+      {
+        "hour": 4,
+        "status": "running",
+        "avgTemperature": 73.2,
+        "avgVibration": 2.0,
+        "powerConsumption": 7.3
+      }
+    ],
+    "type": "daily-statistics",
+    "_ts": 1708963200
+  },
+  {
+    "id": "stats-equipment-002-20240226",
+    "deviceId": "equipment-002",
+    "equipmentName": "第2製造ライン組立ロボット",
+    "date": "2024-02-26",
+    "period": "daily",
+    "statistics": {
+      "operatingHours": 22.0,
+      "downtime": 2.0,
+      "efficiency": 91.67,
+      "averageTemperature": 68.5,
+      "maxTemperature": 72.3,
+      "minTemperature": 65.2,
+      "averageVibration": 1.8,
+      "maxVibration": 2.2,
+      "alertCount": 0,
+      "criticalAlertCount": 0,
+      "cycleTime": 45.2,
+      "completedCycles": 1280
+    },
+    "hourlyData": [
+      {
+        "hour": 0,
+        "status": "running",
+        "avgTemperature": 67.8,
+        "avgVibration": 1.7,
+        "cyclesCompleted": 55
+      },
+      {
+        "hour": 1,
+        "status": "running",
+        "avgTemperature": 68.2,
+        "avgVibration": 1.8,
+        "cyclesCompleted": 58
+      }
+    ],
+    "type": "daily-statistics",
+    "_ts": 1708963200
+  },
+  {
+    "id": "stats-equipment-003-20240226",
+    "deviceId": "equipment-003",
+    "equipmentName": "空圧コンプレッサー1号機",
+    "date": "2024-02-26",
+    "period": "daily",
+    "statistics": {
+      "operatingHours": 24.0,
+      "downtime": 0.0,
+      "efficiency": 100.0,
+      "averageTemperature": 76.8,
+      "maxTemperature": 82.1,
+      "minTemperature": 72.5,
+      "averagePressure": 6.8,
+      "maxPressure": 7.2,
+      "minPressure": 6.5,
+      "alertCount": 0,
+      "criticalAlertCount": 0,
+      "totalAirProduced": 65280
+    },
+    "hourlyData": [
+      {
+        "hour": 0,
+        "status": "running",
+        "avgTemperature": 75.2,
+        "avgPressure": 6.7,
+        "airProduced": 2720
+      }
+    ],
+    "type": "daily-statistics",
+    "_ts": 1708963200
+  },
+  {
+    "id": "stats-equipment-005-20240226",
+    "deviceId": "equipment-005",
+    "equipmentName": "包装機械ライン",
+    "date": "2024-02-26",
+    "period": "daily",
+    "statistics": {
+      "operatingHours": 20.5,
+      "downtime": 3.5,
+      "efficiency": 85.42,
+      "averageTemperature": 65.8,
+      "maxTemperature": 69.2,
+      "minTemperature": 62.1,
+      "averageVibration": 3.7,
+      "maxVibration": 4.2,
+      "alertCount": 2,
+      "criticalAlertCount": 0,
+      "packagesCompleted": 15680,
+      "defectRate": 0.8
+    },
+    "hourlyData": [
+      {
+        "hour": 0,
+        "status": "running",
+        "avgTemperature": 64.5,
+        "avgVibration": 3.6,
+        "packagesCompleted": 785
+      }
+    ],
+    "type": "daily-statistics",
+    "_ts": 1708963200
+  }
+]
